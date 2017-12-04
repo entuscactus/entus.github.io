@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Entus.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        
+<style>
+/*///////////////////////////// !important declaration /////////////////////////////*/
+    h1,h2,h3,h4,a{
+        font-family:'Raleway', sans-serif;
+    }
+    p{
+        font-family: 'Cabin', sans-serif;
+    
+    }
+   
+/*///////////////////////////// style attribute /////////////////////////////*/    
+/*///////////////////////////// id attribute /////////////////////////////*/ 
+
+    .wrapper{   
+        width: 1366px; 
+        margin: auto; 
+        margin-top: 2%;
+    }   
+    #logo{
+        margin-top: 2em;
+        align-content: center;
+    }   
+    #head_border{
+       display: none;
+        margin-bottom: 1.8em;
+    }
+    #left_menu_area{
+        border-top:1px solid #ccc;
+        width: 90%;
+        margin: auto;
+        margin-top:-1em;
+        padding-top: 1em;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 2.8em;
+        font-size: 1.1em;
+        align-content: center;
+        text-align: center;
+    }
+   
+    #home_shop{
+        width: 99% ;
+        margin-top: 1em;
+        margin-right:0.5%;
+        margin-left: 0.5%;
+        
+    }
+    #home_shop_best{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width:100%;
+        height: 540px;
+        background-color: #E8E8E7;
+        
+        
+    }
+    #footer_color{
+        width: 100%;
+        height: auto;
+        background-color:whitesmoke;
+    }
+    #footer{
+        margin: auto;
+        background-color:whitesmoke;
+        width: 96%;
+        height: auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-top:2em;
+        padding-bottom: 1em;
+        
+    } 
+    #recommend{
+        width: 50%; 
+        margin-left: 16%;
+        height: 400px;
+        clear: both;
+    }
+
+   
+ /* class attribute */ 
+    .searchButton {
+        background: white;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        
+    }
+    
+    .searchButton img {
+        max-height: 30px;
+        float: right
+    }
+    
+    .center{
+        text-align: center;
+        margin: auto;  
+    }
+   
+    .menubar{
+        display:inline-block;
+        width:auto;
+        font-size: 0.9em;
+        
+    }
+    .menuhover:hover {
+        color:#000!important;
+        background-color:#ccc!important 
+    }
+
+    .border{
+        border-width: 100%; 
+        border:1px solid #ccc ;!important  
+    }
+    .bar-item{
+        padding:5px 20px;
+        float:left;width:auto;
+        border:none;
+        outline:none;
+        display:block;
+    }
+    .bar-item2{
+        padding:7px 20px;
+        width:auto;
+        display: inline-block;
+        border:none;
+        outline:none;
+       
+    }
+    
+    .shopimg{
+        float:left;
+        width:100%;
+        background-color: white;
+    }
+
+    .fix{
+        max-width:900px ;
+        margin: auto;
+        
+    }
+    .shopimg_info{
+        width:42%;
+        margin-left:4%;
+        margin-right: 4%;
+        padding-top:1em;
+        float: left;
+        
+    }
+     .shopimg img{
+        width:50%;
+        float:left;
+    }
+     .nametag{
+        font-size: 1.4em;
+        font-weight: 600;
+        margin-top: -0.7em;
+    }
+    .justify{
+        text-align: justify;
+    }
+    .small{
+        font-size: 0.9em;
+        font-weight: 200;
+    }
+    .footer_in1{ 
+        margin-left:3em;
+        margin-right: 3em;
+        width: 30%;
+        text-align: left;
+        float: left;
+        
+    }
+    .footer_in2{
+        margin-left:3em;
+        margin-right: 3em;
+        width: 10%;
+        float: left;
+     
+    }
+    .footer_inside{
+        clear: both;
+        border-top: 1px solid #ccc;
+        height: 200px;
+  
+        
+        
+    }
+    .footer_social_media{
+        width: 20%;
+        float: right;
+        height: 100px;
+        margin-top: 1em;
+        
+    }
+    .button {
+        float: right;
+        background-color: darkgray;
+        border: none;
+        color: white;
+        padding: 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+   }
+   .button1 {
+        border-radius: 2px;
+    }
+    
+
+   
+        
+    
+ /*///////////////////////////// pesudo attribute /////////////////////////////*/
+    
+    #logo img{
+        width:200px;
+    }
+    .menubar a:link{
+        text-decoration: none; 
+        color: grey;
+    } 
+    .menubar a:visited{
+        text-decoration: none; 
+        color: grey;
+    }
+   
+    .best_shopimg img{
+        width:50%;
+    }
+    #left_menu_area a{
+        text-decoration: none;
+      color: grey;
+    }
+     .hover:hover {
+        color:#000!important;
+ 
+    }
+    .footer_in1 p{
+        font-weight:100;
+        color:gray
+    }
+    .footer_in2 a {
+        line-height:1.7em;
+        
+    }
+    #footer a{
+        text-decoration: none;
+        color: gray
+    }
+    .footer_social_media img{
+        width:17%;
+        margin: 0.5%;
+    }
+    #recommend img {
+        width: 30%;
+        margin-right: 1%;
+        margin-left: 1%;}
+ 
+   
+    #home_shop_best >h3{
+   
+        text-align: center;
+    } 
+    
+ 
+ /* element */ 
+    header {
+        text-align: right;
+        padding-bottom:2px;
+    }
+    button:hover {
+    background-color: grey;
+}
+  
+    
+
+ /*//////////////////////////////////////////////////////////-------------------------------Media Query-------------------------------------//////////////////////////////////////////////////////////*/
+        @media only screen and (max-width : 1366px) and (min-width : 900px){
+        /* 2 tile */
+            .wrapper{
+                width:100%; 
+        }
+            .fix{
+                width: auto;
+                padding-right: 3%;
+                padding-left: 3%;}
+   
+    }
+         @media only screen and (max-width : 900px) and (min-width : 600px) {
+        /* 1 tiles */
+               .wrapper{
+                   width:100%; 
+                }
+               #left_menu_area{
+                   font-size: 1em;
+                } 
+               #home_shop_best{
+                  padding-top: 1em;
+                  width:100%;
+                  max-height:480px; 
+                  font-size: 0.9em;
+             }
+             .fix{
+                 width: auto;
+                 padding-right: 2em;
+                 padding-left: 2em;
+             }
+             .shopimg_info >div{
+              display: none;
+    }
+             #footer{
+                    font-size: 0.8em;
+                    height: 270px;
+           }
+               .footer_social_media {
+                   width: 35%;
+           }
+             
+    }
+           
+         @media only screen and (max-width : 600px) and (min-width : 320px) {
+        /* 1 tiles */
+               .wrapper{
+                   width:100%; 
+             }
+              .menubar{
+                   width: auto;
+                   font-size: 0.9em;
+             }
+              .bar-item{
+                  padding:5px 12px;
+                  float:left;
+                  width:auto;
+                  border:none;
+                  outline:none;
+                  display:block;
+             }
+              .bar-item2{
+                  padding:5px 12px;
+                  width:auto;
+                  border:none;
+                  outline:none;
+                  display:inline-block;
+             }
+    
+           
+             
+              #left_menu_area{
+                  font-size: 0.9em;
+             }
+               #home_shop_best{
+                  width:100%;
+                  height: 2000px;
+                  padding:0;
+                  background-color: white;
+             }
+  
+               #home_shop{
+                 width: 100%;
+             }
+               .shopimg{
+                   clear:both;
+                   width:96%;
+                   margin-left:2%;
+                   margin-right: 2%;
+                   margin-top:-2em;
+                 
+             }
+             
+              .shopimg_info{
+                   width: 98%;
+                   margin:1%;
+            }
+             
+             .shopimg img{
+                   width:100%;
+                   float:left;
+            }
+             #footer{
+                 display: none;
+             }
+    }
+</style>
+   
+   <link href="https://fonts.googleapis.com/css?family=Cabin|Raleway" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- header -->
+       <header id="head_border">
+        
+         <button type="submit" class="searchButton">
+             <img alt="search" src="./site_images/account.png"/>
+         </button>
+  
+    </header>
+    
+<!-- body layout -->   
+    
+
+        
+  <!--menuebar -->
+     <div class="center" >
+         <div id="logo">
+             <img alt="logoimage" src="Images/Logo-horizontal.png">
+         </div> 
+    
+         <div class="border menubar">
+             <a href="./index.html" class="menuhover bar-item">
+                 <b> HOME  </b>
+             </a> 
+             <a href="#" class="menuhover bar-item"><b> ABOUT </b></a>
+             <a href="./Shop.html" class="menuhover bar-item"><b> SHOP </b></a>
+             <a href="./account_page.html" class="menuhover bar-item"><b> ACCOUNT </b></a>
+             <a href="#" class="menuhover bar-item"><b> HELP </b></a>
+         </div>
+ 
+    </div>
+
+    <!--  -->
+  
+<div class="wrapper">  
+    <div id="left_menu_area">
+      
+          <a href="#" class="bar-item2 hover"> <span style="color: black">All</span></a>
+      
+          <a href="#" class="bar-item2 hover"> Cactus</a>
+      
+          <a href="#" class="bar-item2 hover">  Succulents</a>
+        
+          <a href="#" class="bar-item2 hover"> Sets</a>
+          
+          <a href="#" class="bar-item2 hover"> Sales</a>
+        
+    </div>
+ </div>
+
+    <div id="home_shop_best">
+        <h3> PRODUCT INFORMATION</h3>
+        <div class="fix">
+          <div class="shopimg">
+            <img src="./Images/92628660d95f355316c540b03a8e1529.jpg" alt="new plant1">
+            <div class="shopimg_info">
+                
+                <p>CAD18.00</p>
+                <p class="nametag"> Mini Cactus with black flower pot</p>
+                <div>
+                <p class="justify small" >Lacinia augue nam vivamus, ut sodales potenti, curabitur amet vero, nunc integer, morbi sed arcu adipiscing urna mauris. Proin lectus, diamlorem varius tellus libero odio non, tristique vel vel est feugiat wisi sed, faucibus volutpat, eu ut tempus eget neque ac. Commodo ut convallis lorem ac. Augue lectus lacus mollis mauris odio, erat velit elit nec, </p>
+                </div>
+              
+                <p><span style="color:grey" >QUANTITY</span></p>
+                <input type="number" name="quantity" min="1" max="5">
+
+                <p><span style="color:grey" >COLOR OPTION</span></p>
+                <select id="country" name="country">
+                 <option value="australia">Black</option>
+                 <option value="australia">Grey</option>
+                 <option value="canada">Yellow</option>
+                </select>
+                <br>
+                <br>
+                  <button class="button button1">
+                     <b> ADD TO CART</b>
+                  </button>
+                </div>
+            
+         </div>
+      
+     
+        </div>
+    </div>
+             
+<div class="wrapper">
+    <div id="home_shop">
+  
+
+        
+   
+  </div>  
+    
+     
+       <div id="recommend">
+           <h3> You might like..</h3>
+              <img src="./site_images/plant5.jpg" alt="recommendation1">
+              <img src="./site_images/plant5.jpg" alt="recommendation1">
+              <img src="./site_images/plant5.jpg" alt="recommendation1">
+       </div>
+   <br/><br/>
+    </div>
+   
+    
+    <div id="footer_color" >
+       <div class="wrapper">
+       <div id="footer">
+        <div class="footer_in1">
+            <h2>ENTUS</h2>
+        </div>
+        <div class="footer_in2">
+            <h4>MENU</h4>
+        </div>
+        <div class="footer_inside">
+            <div class="footer_in1">
+                <p>
+                    <b>CS CENTER</b>
+                <br/>
+                  604 432 8600 / MON - FRI: 9AM - 5PM
+                <br>
+                <br>
+                    <b>ENTUS ADDRESS</b>
+                <br>
+                  3600 Willingdon Ave
+                  Burnaby,
+                <br>
+                  BC V5G 3H2
+                <br/><br/><br/>
+                 &copy;amyyulimseo. All right
+             </p>
+            </div>
+            <div class="footer_in2">
+                <br>
+                <a href="./index.html" > Home     </a>
+              <br>
+                <a href="#" > About    </a>
+              <br>
+                <a href="./Shop.html" > Shop     </a>
+              <br>
+                <a href="./account_page.html" > Account  </a>
+             <br>
+                <a href="#" > Help     </a>
+              
+            </div>
+            <div class="footer_social_media">
+                <a href="#"> 
+                    <img alt="social" src="./site_images/facebook.png">
+                </a>
+                <a href="#"> 
+                    <img alt="social" src="./site_images/insra.png">
+                </a>
+                <a href="#">
+                    <img alt="social" src="./site_images/youtube.png">
+                </a>
+                <a href="#">
+                    <img alt="social" src="./site_images/twitter.png">
+                </a>
+                <a href="#">
+                    <img alt="social" src="./site_images/vimeo.png">
+                </a>
+                
+            </div>
+            
+       </div>
+           
+       </div>
+
+     </div>
+   </div>   
+</body>
+</html>
