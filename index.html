@@ -278,12 +278,12 @@
          color:black;
          
     }
-     .shopbutton a:hover{
+    .shopbutton a:hover{
         font-size: 1.1em;
         color:black;
         text-decoration: none;
     }
-     .shopbutton a:visited{
+    .shopbutton a:visited{
         font-size: 1.1em;
         color:black;
         text-decoration: none;
@@ -297,7 +297,10 @@
      #home_in2 p{
          line-height: 60%;
     }
-     .howto2 img{
+    #home_shop a{color: black;
+        
+    }
+    .howto2 img{
         width: 100%;
         
     }
@@ -468,10 +471,26 @@
                    top: 10em;
                    : 70%;
                    z-index: 2;  
-            }   
-              #home_shop{ 
-                  max-height: 600px;
+            } 
+              
+                #home_shop{ 
+                   max-height: 700px;
             }
+               .howto1 {
+                   width: 39%;
+                   height: 00px;
+             }  .vl{
+                 margin-top: 4em;
+             }
+               .howto2{
+                   margin-top: 4em;
+    
+             }
+             
+                #home_middle{
+                   font-size: 0.9em;
+             }
+             
                 #home_in1{
                    float: left;
                    width: 40%;
@@ -491,37 +510,67 @@
                    text-align: center;
         
            }
-           
                 #footer{
-                    font-size: 0.8em;
-                    height: 270px;
+                  font-size: 0.8em;
+                  height: 270px;
                     
            }
            
                .footer_social_media {
-                   width: 35%;
+                  width: 35%;
            }
     }
            
          @media only screen and (max-width : 600px) and (min-width : 320px) {
              /* 1 tiles */
+             .wraper{width: 100%;}
                 .shopbutton{
                    display:none;
            }
                 .menubar{
-                   width: auto;
-                   font-size: 0.9em;
+                    width: auto;
+                    font-size: 0.9em;
                     margin-bottom: 1em;
            }
                 .bar-item{
-                  padding:5px 12px;
-                  float:left;width:auto;
-                  border:none;
-                  outline:none;
-                  display:block;
+                    padding:5px 12px;
+                    float:left;width:auto;
+                    border:none;
+                    outline:none;
+                    display:block;
+           }    #home_shop{
+                    background-color: white;
+                    margin-top: -3em;
            }
-                #home_shop{
-                   background-color: white;
+                #home_shop p,h3{
+                    display: none;
+                 
+             }
+                #home_middle{
+                    clear: both;
+                    height: 400px;
+                    background-color: whitesmoke;
+                    margin-top: -7em;
+                    padding: 1em;
+           }     
+                #home_middle h2{
+                   padding-top: -1em;
+           }  
+               .vl{
+                   clear: both;
+                   width: 100%;
+                   height: 1px;
+                   border-top:solid 1px #ccc;
+             }
+               .howto1 {
+                   width: 96%;
+                   margin: 2%;
+           }
+               .howto2{
+                   width: 96%;
+                   margin-top: 0em;
+                   margin-left: 2%;
+                   margin-right: 2%;
            }
                 #home_in1{
                    float: left;
@@ -538,10 +587,42 @@
                    margin-left: 8%;
                    margin-right: 8%;
                    margin-top: 5%;
+                   margin-bottom: 3em;
                    background-color: whitesmoke;
                    text-align: center;
         
-           }
+           }       
+               #home_bottom{
+                   clear: both;
+                   width: 100%;
+                   height: 400px;
+                   margin: 0em 0em 0em 0em;
+       
+        
+    }
+         
+             .qs{
+                 background-color: whitesmoke;
+                 width: 100%;
+                 margin: 0em 0em 0em 0em;
+                 padding-bottom: 2em;
+                 
+             }
+             .qs p,h1,h2,h3{
+                 margin-top: -4em;
+                 padding-left: 1em;
+        
+             }
+             .qs button{
+                 position: relative;
+                 right: 30%;
+             }
+             .insta{
+                 width: 100%;
+                 margin: -6em 0em 0em 0em;
+                 
+             }
+           
     
                 #footer{
                     display: none;
@@ -634,19 +715,19 @@
             <h2 class="center">CUSTOMER'S  FAVORITES</h2>
         <div id="home_in1">
             <img alt="popular plant1" src="site_images/plant1.jpg">
-             <h3>"Information about Cactus"</h3>
-             <p> how to grow cactus: </p>
-             <p> First,sdfh dflkj sdfjk sdfkj </p>
-             <p> dfsldkjflksjfdsjfnsdfjlsldkfj dfljl</p>
+             <h3>"Stone texture pot with cute cactus"</h3>
+             <p>Looking for a cozy "home" for your new cati friend?</p>
+            <a href="./Shop_detail.html"><p><b>Click here</b></p></a>
+             
         </div>
         
       
         <div id="home_in3">
             <img alt="popular plant2" src="site_images/plant8.jpg">
-             <h3>"Information about Cactus"</h3>
-             <p> how to grow cactus: </p>
-             <p> First,sdfh dflkj sdfjk sdfkj </p>
-             <p> dfsldkjflksjfdsjfnsdfjlsldkfj dfljl</p>
+             <h3>"Little fat desk plant pot "</h3>
+             <p> Looking for a beautiful "home" for your new little cactus?</p>
+            <a href="./Shop.html"><p><b>Click here</b></p></a>
+             
        </div>
        </div>
         
