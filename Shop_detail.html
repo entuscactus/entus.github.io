@@ -220,7 +220,6 @@
     }
     
 
-   
         
     
  /*///////////////////////////// pesudo attribute /////////////////////////////*/
@@ -281,10 +280,19 @@
         text-align: right;
         padding-bottom:2px;
     }
-    button:hover {
+    .button:hover {
     background-color: grey;
 }
-  
+    select{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+    input[type=submit]{
+        font-weight: 600;
+    }
     
 
  /*//////////////////////////////////////////////////////////-------------------------------Media Query-------------------------------------//////////////////////////////////////////////////////////*/
@@ -303,31 +311,36 @@
         /* 1 tiles */
                .wrapper{
                    width:100%; 
-                }
+              }
                #left_menu_area{
-                   font-size: 1em;
-                } 
+                   font-size: 0.8em;
+              } 
                #home_shop_best{
                   padding-top: 1em;
                   width:100%;
                   max-height:480px; 
                   font-size: 0.9em;
-             }
-             .fix{
+              }
+               .fix{
                  width: auto;
                  padding-right: 2em;
                  padding-left: 2em;
-             }
-             .shopimg_info >div{
-              display: none;
-    }
-             #footer{
+              }
+               .shopimg_info >div{
+                 display: none;
+              }
+               #recommend{
+                 width: 90%;
+                 margin:auto;
+                 margin-top: 1em;
+              }
+               #footer{
                     font-size: 0.8em;
                     height: 270px;
-           }
+              }
                .footer_social_media {
                    width: 35%;
-           }
+             }  
              
     }
            
@@ -355,23 +368,24 @@
                   outline:none;
                   display:inline-block;
              }
-    
-           
-             
               #left_menu_area{
-                  font-size: 0.9em;
+                  font-size: 0.8em;
              }
-               #home_shop_best{
+              #home_shop_best{
                   width:100%;
-                  height: 2000px;
+                  
+                  margin-bottom: 1em;
                   padding:0;
                   background-color: white;
+             } 
+              #home_shop_best img{
+                 margin-top: 2em;
              }
   
-               #home_shop{
+              #home_shop{
                  width: 100%;
              }
-               .shopimg{
+              .shopimg{
                    clear:both;
                    width:96%;
                    margin-left:2%;
@@ -383,15 +397,30 @@
               .shopimg_info{
                    width: 98%;
                    margin:1%;
-            }
+             }
              
-             .shopimg img{
+              .shopimg img{
                    width:100%;
                    float:left;
-            }
-             #footer{
+             }
+              .button{
+                 width: 100%;
+                 float:none;
+             }
+              #recommend{
+                 width: 100%;
+                 margin:auto;
+                 margin-top: 1em;
+             }
+              #recommend h3{
+                 text-align: center;
+                 padding-top: 1em;
+             }
+              #recommend img{width: 100%;}
+              #footer{
                  display: none;
              }
+             
     }
 </style>
    
@@ -444,7 +473,6 @@
         
           <a href="#" class="bar-item2 hover"> Sets</a>
           
-          <a href="#" class="bar-item2 hover"> Sales</a>
         
     </div>
  </div>
@@ -469,20 +497,21 @@
                 </div>
               
                 <p><span style="color:grey" >QUANTITY</span></p>
-                <input type="number" name="quantity" min="1" max="5">
+                <input type="number" name="quantity" min="1" max="5" required="required"/>
 
                 <p><span style="color:grey" >COLOR OPTION</span></p>
-                <select id="country" name="country">
-                 <option value="australia">Black</option>
-                 <option value="australia">Grey</option>
-                 <option value="canada">Yellow</option>
+                <select id="country" name="country" required="required">
+                 <option value="Black">Black</option>
+                 <option value="Grey">Grey</option>
+                 <option value="Yellow">Yellow</option>
                 </select>
                 <br>
                 <br>
                 <a href="./account_page.html">
-                  <button class="button button1">
+                    <input id="submit" name="submit" value="ADD TO CART" type="submit" class="button button1"/>
+                  <!--<button class="button button1">
                        <b> ADD TO CART</b> 
-                  </button>
+                  </button>-->
                 </a>
                 </div>
             
@@ -493,12 +522,6 @@
     </div>
              
 <div class="wrapper">
-    <div id="home_shop">
-  
-
-        
-   
-  </div>  
     
      
        <div id="recommend">
